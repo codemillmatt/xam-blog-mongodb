@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MongoDemo.ToDoItemDetailPage"
+    Title="New Item">
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableView.Root>
+                <TableSection Title="Item Details">
+                    <EntryCell Label="Name" x:Name="nameCell" />
+                    <EntryCell Label="Description" x:Name="descriptionCell" />
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+    </ContentPage.ToolbarItems>
+</ContentPage>
